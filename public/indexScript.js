@@ -3,7 +3,7 @@ var writtenText;
 var letter = document.createElement("span");
 var currentLetter = 0;
 var current = 0;
-var time = 200;
+var time = 150;
 
 function typeWords(words) {
   word = rolls[current];
@@ -24,7 +24,7 @@ function removeWords(words) {
     writtenText[writtenText.length-1].remove();
     currentLetter--;
     if (currentLetter > 0) {
-        setTimeout(removeWords, time);
+        setTimeout(removeWords, time/2);
     }
     else setTimeout(typeWords, time);
 
