@@ -1,4 +1,4 @@
-const rolls = ["Tushar", "a Programmer", "a Gamer", "an Artist"];
+const rolls = ["Tushar", "a Developer", "a Gamer", "an Artist"];
 const allSkills = document.querySelectorAll(".skill");
 let counter;
 var skillSet = 0;
@@ -101,6 +101,10 @@ hideSkills();
 document.querySelectorAll(".showProjectDetails").forEach(function(project) {
   project.addEventListener("click", function(){
     project.nextElementSibling.classList.toggle("h-0");
+    if(project.nextElementSibling.classList.contains("h-0")){
+      project.textContent = "Show Details";
+    }
+    else project.textContent = "Hide Details";
   });
   console.log(project.nextElementSibling)
 })
