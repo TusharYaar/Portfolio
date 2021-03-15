@@ -18,13 +18,13 @@ function typeWords(words) {
     letter.classList = "letter";
     letter.textContent = rolls[current][currentLetter++];
     document
-      .getElementById("cursor")
-      .insertAdjacentElement("beforebegin", letter);
+      .getElementById("role")
+      .insertAdjacentElement("beforeend", letter);
     setTimeout(typeWords, time);
   }
 }
 function removeWords(words) {
-  writtenText = document.querySelectorAll("#introTypewriter > span.letter");
+  writtenText = document.querySelectorAll("#introTypewriter  span.letter");
   writtenText[writtenText.length - 1].remove();
   currentLetter--;
   if (currentLetter > 0) {
@@ -95,3 +95,12 @@ setTimeout(()=>{for(i=0;i<maxlimit;i++){
 }
 
 hideSkills();
+
+
+
+document.querySelectorAll(".showProjectDetails").forEach(function(project) {
+  project.addEventListener("click", function(){
+    project.nextElementSibling.classList.toggle("h-0");
+  });
+  console.log(project.nextElementSibling)
+})
