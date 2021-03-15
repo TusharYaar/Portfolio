@@ -65,10 +65,10 @@
     >
       <h2 class="text-3xl md:text-5xl self-start md:self-auto">My Skills</h2>
       <div class="flex flex-grow flex-col w-full" id="skillsDisplay">
-        <div class="flex flex-grow m-5 px-5 skill" id="skill1">
+        <div class="flex flex-grow my-5 md:px-5 skill" id="skill1">
           <img
             src="https://img.icons8.com/color/48/000000/javascript.png"
-            class="w-14 md:w-16 mx-4 transition-opacity duration-500 opacity-0 skillImage"
+            class="w-14 md:w-16 mr-4 transition-opacity duration-500 opacity-0 skillImage"
           />
           <div class="flex flex-col justify-around flex-grow">
             <div class="flex flex-row justify-between">
@@ -92,10 +92,10 @@
           </div>
         </div>
 
-        <div class="flex flex-grow m-5 px-5 skill" id="skill2">
+        <div class="flex flex-grow my-5 md:px-5 skill items-center" id="skill2">
           <img
             src="https://img.icons8.com/color/48/000000/javascript.png"
-            class="w-14 md:w-16 mx-4 transition-opacity duration-500 opacity-0 skillImage"
+            class="w-14 md:w-16 mr-4 transition-opacity duration-500 opacity-0 skillImage"
           />
           <div class="flex flex-col justify-around flex-grow">
             <div class="flex flex-row justify-between">
@@ -119,10 +119,10 @@
           </div>
         </div>
 
-        <div class="flex flex-grow m-5 px-5 skill" id="skill3">
+        <div class="flex flex-grow my-5 md:px-5 skill" id="skill3">
           <img
             src="https://img.icons8.com/color/48/000000/javascript.png"
-            class="w-14 md:w-16 mx-4 transition-opacity duration-500 opacity-0 skillImage"
+            class="w-14 md:w-16 mr-4 transition-opacity duration-500 opacity-0 skillImage"
           />
           <div class="flex flex-col justify-around flex-grow">
             <div class="flex flex-row justify-between">
@@ -146,10 +146,10 @@
           </div>
         </div>
 
-        <div class="flex flex-grow m-5 px-5 skill" id="skill4">
+        <div class="flex flex-grow my-5 md:px-5 skill" id="skill4">
           <img
             src="https://img.icons8.com/color/48/000000/javascript.png"
-            class="w-14 md:w-16 mx-4 transition-opacity duration-500 opacity-0 skillImage"
+            class="w-14 md:w-16 mr-4 transition-opacity duration-500 opacity-0 skillImage"
           />
           <div class="flex flex-col justify-around flex-grow">
             <div class="flex flex-row justify-between">
@@ -176,7 +176,9 @@
     </section>
     <section id="contact" class="w-full px-5 my-7">
       <h2 class="text-3xl md:text-5xl">Contact Me</h2>
-      <div class="w-full flex flex-col md:flex-row items-center justify-between">
+      <div
+        class="w-full flex flex-col md:flex-row items-center justify-between"
+      >
         <!-- Contact Me -->
 
         <form
@@ -209,7 +211,7 @@
                 autocomplete="off"
               />
             </div>
-            <div class="flex flex-col mb-3">
+            <div class="flex flex-col mb-7">
               <label for="message">Message</label>
               <textarea
                 rows="4"
@@ -232,34 +234,36 @@
         </form>
 
         <!-- Social Media -->
-        <div class="">
+        <div class="mt-10 flex flex-col items-start w-full md:w-auto">
           <h3 class="text-2xl font-semibold mb-5">My Social Media</h3>
           <!-- list -->
-          <div class="flex flex-col gap-3">
-            <a
-              href="https://github.com/TusharYaar"
-              class="flex items-center hover:text-white hover:bg-blue-700 p-2"
-            >
-              Github
-            </a>
-            <a
-              href="https://www.linkedin.com/in/tushar-s-agrawal-215ba81a0/"
-              class="flex items-center hover:text-white hover:bg-blue-700 p-2"
-            >
-              Linkedin
-            </a>
-            <a
-              href="https://www.instagram.com/tushar_yaar/"
-              class="flex items-center hover:text-white hover:bg-blue-700 p-2"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://twitter.com/tushar_yaar"
-              class="flex items-center hover:text-white hover:bg-blue-700 p-2"
-            >
-              Twitter
-            </a>
+          <div>
+            <div class="flex flex-col gap-3">
+              <a
+                href="https://github.com/TusharYaar"
+                class="flex items-center hover:text-white hover:bg-blue-700 p-2"
+              >
+                Github
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tushar-s-agrawal-215ba81a0/"
+                class="flex items-center hover:text-white hover:bg-blue-700 p-2"
+              >
+                Linkedin
+              </a>
+              <a
+                href="https://www.instagram.com/tushar_yaar/"
+                class="flex items-center hover:text-white hover:bg-blue-700 p-2"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://twitter.com/tushar_yaar"
+                class="flex items-center hover:text-white hover:bg-blue-700 p-2"
+              >
+                Twitter
+              </a>
+            </div>
           </div>
         </div>
       </div>
