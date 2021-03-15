@@ -110,6 +110,8 @@ function showSkills() {
       document
       .querySelector(`#${id} .skillImage`).setAttribute('src',skills[4*skillPage+i].image);
       document
+      .querySelector(`#${id} .skillImage`).setAttribute('alt',skills[4*skillPage+i].name);
+      document
       .querySelector(`#${id} .progressBarValue`).innerHTML = `${skills[4*skillPage+i].rating}%`
     document
       .querySelector(`#${id} .skillName`)
