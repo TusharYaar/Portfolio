@@ -1,25 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body class="bg-gray-900 text-white p-9">
-    <div class="container">
-    <section id="home" class="flex flex-row justify-between items-center" > 
-        <div id="introTypewriter"  class="text-6xl"><p>Hello, I'm </p><span id="cursor">_</span></div>
-        <img src="./images/undraw_feeling_proud_qne1.svg" alt="Person sitting on the desk" class="max-h-80">
-    </section>
-    <section id="about">
-        <h2 class="text-5xl">About Me</h2>
-        <p>Born and brought up in Jabalpur, I first encounted programming in my collage and instantly fell in love with it. I am always eager to experiment with new technologies and solve challenging problems.</p>
-    </section>
-    <section id="projects" >   <h2 class="text-5xl">About Me</h2></section>
-    <section id="contact" >   <h2 class="text-5xl">About Me</h2></section>
-</div>
-<script src="indexScript.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tushar S Agrawal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Karla", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white md:p-9">
+    <div class="">
+      <section id="home" class="flex flex-row justify-between items-center m-8">
+        <div id="introTypewriter" class="text-6xl">
+          <p>Hello, I'm</p>
+          <span id="cursor" class="animate-pulse">_</span>
+        </div>
+        <img
+          src="./images/undraw_feeling_proud_qne1.svg"
+          alt="Person sitting on the desk"
+          class="max-h-80"
+        />
+      </section>
+      <section id="about" class="m-4">
+        <h2 class="text-5xl mb-4">About Me</h2>
+        <div class="flex items-center flex-col md:flex-row justify-end">
+          <p class="text-lg md:text-xl order-2 md:order-first">
+            Hi, my name is Tushar S Agrawal. I am a computer science student,
+            and passionate towards my work. I like to convert concepts to
+            reality. Born and brought up in Jabalpur, I first encounted
+            programming in my collage and instantly fell in love with it. I am
+            always eager to experiment with new technologies and frameworks and
+            always ready to solve challenging problemsz.
+          </p>
+          <img
+            src="./images/profilepic2.jpeg"
+            alt="Profile Picture"
+            id="profile-picture"
+            class="mx-8 my-8 md:my-4 w-52 h-52 rounded-full"
+          />
+        </div>
+      </section>
+
+
+
+      <!-- Skills Section -->
+      <section
+        id="skillsSection"
+        class="flex flex-col md:flex-row justify-between items-center"
+      >
+        <h2 class="text-5xl">My Skills</h2>
+        <div class="flex flex-grow mx-5 px-5 flex-col w-full" id="skillsDisplay">
+          <div class="flex flex-grow m-5 px-5 skill" id="skill1">
+            <img
+              src="https://img.icons8.com/color/48/000000/javascript.png"
+              class="w-14 md:w-16 mx-4 transition-opacity duration-500 opacity-0 skillImage"
+            />
+            <div class="flex flex-col justify-around flex-grow">
+              <div class="flex flex-row justify-between">
+                <h3 class="skillName transition-opacity duration-500 opacity-0">Javascipt</h3>
+                <span class="progressBarValue opacity-0 transition-opacity duration-500">80%</span>
+              </div>
+              <div class="relative">
+                <div
+                  style="width: 0%"
+                  class="progressBar h-2 transition-width duration-1000 justify-center bg-pink-500 absolute top-0 left-0 z-10 rounded-l-full"
+                ></div>
+                <div
+                  class="w-full h-2 transition-opacity duration-500 opacity-0 justify-center bg-pink-200 absolute top-0 left-0 rounded-l-full rounded-r-full progressBarBackground"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-grow m-5 px-5 skill" id="skill2">
+            <img
+              src="https://img.icons8.com/color/48/000000/javascript.png"
+              class="w-14 md:w-16 mx-4 transition-opacity duration-500 opacity-0 skillImage"
+            />
+            <div class="flex flex-col justify-around flex-grow">
+              <div class="flex flex-row justify-between">
+                <h3 class="skillName transition-opacity duration-500 opacity-0">Javascipt</h3>
+                <span class="progressBarValue opacity-0 transition-opacity duration-500">80%</span>
+              </div>
+              <div class="relative">
+                <div
+                  style="width: 0%"
+                  class="progressBar h-2 transition-width duration-1000 justify-center bg-pink-500 absolute top-0 left-0 z-10 rounded-l-full"
+                ></div>
+                <div
+                  class="w-full h-2 transition-opacity duration-500 opacity-0 justify-center bg-pink-200 absolute top-0 left-0 rounded-l-full rounded-r-full progressBarBackground"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flex flex-grow m-5 px-5 skill" id="skill3">
+            <img
+              src="https://img.icons8.com/color/48/000000/javascript.png"
+              class="w-14 md:w-16 mx-4 transition-opacity duration-500 opacity-0 skillImage"
+            />
+            <div class="flex flex-col justify-around flex-grow">
+              <div class="flex flex-row justify-between">
+                <h3 class="skillName transition-opacity duration-500 opacity-0">Javascipt</h3>
+                <span class="progressBarValue opacity-0 transition-opacity duration-500">80%</span>
+              </div>
+              <div class="relative">
+                <div
+                  style="width: 0%"
+                  class="progressBar h-2 transition-width duration-1000 justify-center bg-pink-500 absolute top-0 left-0 z-10 rounded-l-full"
+                ></div>
+                <div
+                  class="w-full h-2 transition-opacity duration-500 opacity-0 justify-center bg-pink-200 absolute top-0 left-0 rounded-l-full rounded-r-full progressBarBackground"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="flex flex-grow m-5 px-5 skill" id="skill4">
+            <img
+              src="https://img.icons8.com/color/48/000000/javascript.png"
+              class="w-14 md:w-16 mx-4 transition-opacity duration-500 opacity-0 skillImage"
+            />
+            <div class="flex flex-col justify-around flex-grow">
+              <div class="flex flex-row justify-between">
+                <h3 class="skillName transition-opacity duration-500 opacity-0">Javascipt</h3>
+                <span class="progressBarValue opacity-0 transition-opacity duration-500">80%</span>
+              </div>
+              <div class="relative">
+                <div
+                  style="width: 0%"
+                  class="progressBar h-2 transition-width duration-1000 justify-center bg-yellow-500 absolute top-0 left-0 z-10 rounded-l-full"
+                ></div>
+                <div
+                  class="w-full h-2 transition-opacity duration-500 opacity-0 justify-center bg-yellow-200 absolute top-0 left-0 rounded-l-full rounded-r-full progressBarBackground"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects"><h2 class="text-5xl">My Porjects</h2></section>
+      <section id="contact"><h2 class="text-5xl">About Me</h2></section>
+    </div>
+    <script defer src="indexScript.js"></script>
+  </body>
 </html>
