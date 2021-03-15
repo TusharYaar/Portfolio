@@ -155,8 +155,25 @@
         </div>
       </section>
       <section id="projects" class="px-5 my-7"><h2 class="text-3xl md:text-5xl">My Projects</h2></section>
-      <section id="contact" class="px-5 my-7"><h2 class="text-3xl md:text-5xl">Contact Me</h2></section>
+      <section id="contact" class="px-5 my-7"><h2 class="text-3xl md:text-5xl">Contact Me</h2>
+        <form name="contact" method="POST" data-netlify="true">
+          <p class="my-7">
+            <label>Your Name: <input type="text" name="name" /></label>   
+          </p>
+          <p class="my-7">
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p class="my-7">
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+        
+      </section>
     </div>
+    <script src="skills.js"></script>
     <script defer src="indexScript.js"></script>
   </body>
 </html>

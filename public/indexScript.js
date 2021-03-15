@@ -1,73 +1,7 @@
 const rolls = ["Tushar", "a Programmer", "a Gamer", "an Artist"];
 const allSkills = document.querySelectorAll(".skill");
 let counter;
-var skillPage = 0;
-const skills = [
-  {
-    name: "Javascript",
-    rating: "85",
-    image: "https://img.icons8.com/color/48/000000/javascript.png",
-    color: "bg-pink-500",
-    backgroundColor: "bg-pink-200",
-  },
-  {
-    name: "MongoDb",
-    rating: "70",
-    image: "https://img.icons8.com/color/48/000000/mongodb.png",
-    color: "bg-pink-500",
-    backgroundColor: "bg-pink-200",
-  },
-  {
-    name: "Java",
-    rating: "60",
-    image: "https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png",
-    color: "bg-pink-500",
-    backgroundColor: "bg-pink-200",
-  },
-  {
-    name: "HTML",
-    rating: "90",
-    image: "https://img.icons8.com/color/48/000000/html-5.png",
-    color: "bg-pink-500",
-    backgroundColor: "bg-pink-200",
-  },
-  {
-    name: "CSS",
-    rating: "90",
-    image: "https://img.icons8.com/color/48/000000/css3.png",
-    color: "bg-pink-500",
-    backgroundColor: "bg-pink-200",
-  },
-  {
-    name: "C++",
-    rating: "90",
-    image: "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png",
-    color: "bg-pink-500",
-    backgroundColor: "bg-pink-200",
-  },
-  {
-    name: "SQL",
-    rating: "90",
-    image: "https://img.icons8.com/color/48/000000/sql.png",
-    color: "bg-pink-500",
-    backgroundColor: "bg-pink-200",
-  },
-  {
-    name: "React",
-    rating: "10",
-    image: "https://img.icons8.com/color/48/000000/react-native.png",
-    color: "bg-pink-500",
-    backgroundColor: "bg-pink-200",
-  },
-  {
-    name: "Node-Js",
-    rating: "70",
-    image: "https://img.icons8.com/color/48/000000/nodejs.png",
-    color: "bg-pink-500",
-    backgroundColor: "bg-pink-200",
-  },
-  
-];
+var skillSet = 0;
 var writtenText;
 var letter = document.createElement("span");
 var currentLetter = 0;
@@ -99,39 +33,37 @@ function removeWords(words) {
 }
 typeWords(rolls);
 
-// document.getElementById("skillImage1").style.opacity = 1;
-// document.getElementById("skillName1").style.opacity = 1;
-
 function showSkills() {
-  for(let i=0;i<4;i++ ) {
-    id = `skill${i+1}`;
+  var maxlimit =
+    skillSet * 4 + 3 < skills.length ? 4 : skills.length - skillSet * 4;
+  for (let i = 0; i < maxlimit; i++) {
+    id = `#skill${i + 1}`;
+    document.querySelector(`#skill${i + 1} .skillName`).innerHTML =
+      skills[4 * skillSet + i].name;
     document
-      .querySelector(`#${id} .skillName`).innerHTML = skills[4*skillPage+i].name;
-      document
-      .querySelector(`#${id} .skillImage`).setAttribute('src',skills[4*skillPage+i].image);
-      document
-      .querySelector(`#${id} .skillImage`).setAttribute('alt',skills[4*skillPage+i].name);
-      document
-      .querySelector(`#${id} .progressBarValue`).innerHTML = `${skills[4*skillPage+i].rating}%`
-    document
-      .querySelector(`#${id} .skillName`)
+      .querySelector(`#skill${i + 1} .skillName`)
       .classList.replace("opacity-0", "opacity-100");
-    document
-      .querySelector(`#${id} .skillImage`)
-      .classList.replace("opacity-0", "opacity-100");
-    document
-      .querySelector(`#${id} .progressBarBackground`)
-      .classList.replace("opacity-0", "opacity-100");
-      document
-      .querySelector(`#${id} .progressBar`).style.width = `${skills[4*skillPage+i].rating}%`;
-      document
-      .querySelector(`#${id} .progressBarValue`).classList.replace("opacity-0", "opacity-100");
-  };
-  setTimeout(hideSkills,4000);
+    document.querySelector(`#skill${i + 1} .skillImage`).setAttribute("src", skills[4 * skillSet + i].image);
+    document.querySelector(`#skill${i + 1} .skillImage`).setAttribute("alt", skills[4 * skillSet + i].name);
+    document.querySelector(`#skill${i + 1} .progressBarValue`).innerHTML = `${skills[4 * skillSet + i].rating}%`;
+    document.querySelector(`#skill${i + 1} .skillImage`).classList.replace("opacity-0", "opacity-100");
+    existingClass = document.querySelector(`#skill${i + 1} .progressBarBackground`).className.match(/bg.*200/g)[0];
+    document.querySelector(`#skill${i + 1} .progressBarBackground`).classList.replace(existingClass, skills[4*skillSet + i].backgroundColor);
+    document.querySelector(`#skill${i + 1} .progressBarBackground`).classList.replace("opacity-0", "opacity-10");
+    document.querySelector(`#skill${i + 1} .progressBar`).style.width = `${skills[4 * skillSet + i].rating}%`;
+    existingClass = document.querySelector(`#skill${i + 1} .progressBar`).className.match(/bg.*500/g)[0];
+    document.querySelector(`#skill${i + 1} .progressBar`).classList.replace(existingClass, skills[4*skillSet + i].color);
+    document.querySelector(`#skill${i + 1} .progressBarValue`).classList.replace("opacity-0", "opacity-80");
+
+
+
+  }
+  setTimeout(hideSkills, 4000);
 }
 function hideSkills() {
-  for(let i=0;i<4;i++ ) {
-    id = `skill${i+1}`
+
+  for (let i = 0; i < 4; i++) {
+    id = `skill${i + 1}`;
     document
       .querySelector(`#${id} .skillName`)
       .classList.replace("opacity-100", "opacity-0");
@@ -140,17 +72,26 @@ function hideSkills() {
       .classList.replace("opacity-100", "opacity-0");
     document
       .querySelector(`#${id} .progressBarBackground`)
-      .classList.replace("opacity-100", "opacity-0");
-      document
-      .querySelector(`#${id} .progressBar`).style.width = `0%`;
-      document
-      .querySelector(`#${id} .progressBarValue`).classList.replace("opacity-100", "opacity-0");
-      
-  };
-  // skillPage = (skillPage<skills.length/4-1) ?skillPage + 1 : 0;
-  skillPage = (skillPage<1) ?skillPage + 1 : 0;
-  setTimeout(showSkills,1500);
+      .classList.replace("opacity-10", "opacity-0");
+    document.querySelector(`#${id} .progressBar`).style.width = `0%`;
+    document
+      .querySelector(`#${id} .progressBarValue`)
+      .classList.replace("opacity-80", "opacity-0");
 
+    }
+
+
+  skillSet = skillSet < skills.length / 4 - 1 ? skillSet + 1 : 0;
+  var maxlimit =
+  skillSet * 4 + 3 < skills.length ? 4 : skills.length - skillSet * 4;
+
+setTimeout(()=>{for(i=0;i<maxlimit;i++){
+  document.querySelector(`#skill${i + 1} .skillImage`).setAttribute("src",skills[skillSet*4 + i].image);
+}
+},1000 )
+
+
+  setTimeout(showSkills, 1500);
 }
 
-showSkills();
+hideSkills();
