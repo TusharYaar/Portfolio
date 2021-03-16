@@ -11,7 +11,7 @@ const skills = [
     rating: "70",
     image: "https://img.icons8.com/color/48/000000/mongodb.png",
     color: "bg-green-500",
-    backgroundColor: "bg-pink-200",
+    backgroundColor: "bg-green-200",
   },
   {
     name: "Java",
@@ -31,8 +31,8 @@ const skills = [
     name: "HTML",
     rating: "90",
     image: "https://img.icons8.com/color/48/000000/html-5.png",
-    color: "bg-yellow-500",
-    backgroundColor: "bg-yellow-200",
+    color: "bg-orange-500",
+    backgroundColor: "bg-orange-200",
   },
   {
     name: "CSS",
@@ -54,7 +54,7 @@ const skills = [
     rating: "10",
     image: "https://img.icons8.com/color/48/000000/react-native.png",
     color: "bg-blue-500",
-    backgroundColor: "bg-pink-200",
+    backgroundColor: "bg-blue-200",
   },
   {
     name: "Node-Js",
