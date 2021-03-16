@@ -36,7 +36,7 @@ const skills = [
   },
   {
     name: "CSS",
-    rating: "90",
+    rating: "80",
     image: "https://img.icons8.com/color/48/000000/css3.png",
     color: "bg-blue-500",
     backgroundColor: "bg-blue-200",
@@ -44,7 +44,7 @@ const skills = [
 
   {
     name: "SQL",
-    rating: "90",
+    rating: "75",
     image: "https://img.icons8.com/color/48/000000/sql.png",
     color: "bg-indigo-500",
     backgroundColor: "bg-indigo-200",
