@@ -53,7 +53,7 @@ function showSkills() {
     document.querySelector(`#skill${i + 1} .progressBar`).style.width = `${skills[4 * skillSet + i].rating}%`;
     existingClass = document.querySelector(`#skill${i + 1} .progressBar`).className.match(/bg.*500/g)[0];
     document.querySelector(`#skill${i + 1} .progressBar`).classList.replace(existingClass, skills[4*skillSet + i].color);
-    document.querySelector(`#skill${i + 1} .progressBarValue`).classList.replace("opacity-0", "opacity-80");
+    document.querySelector(`#skill${i + 1} .progressBarValue`).classList.replace("opacity-0", "opacity-100");
 
 
 
@@ -76,7 +76,7 @@ function hideSkills() {
     document.querySelector(`#${id} .progressBar`).style.width = `0%`;
     document
       .querySelector(`#${id} .progressBarValue`)
-      .classList.replace("opacity-80", "opacity-0");
+      .classList.replace("opacity-100", "opacity-0");
 
     }
 
