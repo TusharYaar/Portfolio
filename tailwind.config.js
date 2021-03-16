@@ -6,9 +6,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
-  },
   fontFamily: {
-    'karla': ['karla', 'sans-serif']},
+    'karla': ['karla', 'sans-serif']}},
   variants: {
     extend: {},
   },
