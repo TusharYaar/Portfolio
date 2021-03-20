@@ -1,5 +1,5 @@
 module.exports = {
-  purge: { enabled: false,
+  purge: { enabled: true,
     preserveHtmlElements: true,
     content:["./public/index.html","./public/indexScript.js","./public/skills.js"],
 
