@@ -51,7 +51,7 @@ const skills = [
   },
   {
     name: "React",
-    rating: "30",
+    rating: "67",
     image: "https://img.icons8.com/color/64/000000/react-native.png",
     color: "bg-blue-500",
     backgroundColor: "bg-blue-200",
