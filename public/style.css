@@ -1,4 +1,4 @@
-/*! tailwindcss v2.0.4 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.1.1 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -507,7 +507,7 @@ object {
 
 /**
  * Constrain images and videos to the parent width and preserve
- * their instrinsic aspect ratio.
+ * their intrinsic aspect ratio.
  *
  * https://github.com/mozdevs/cssremedy/issues/14
  */
@@ -553,6 +553,11 @@ video {
   background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
 }
 
+.bg-yellow-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
+}
+
 .bg-green-200 {
   --tw-bg-opacity: 1;
   background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
@@ -591,11 +596,6 @@ video {
 .bg-indigo-500 {
   --tw-bg-opacity: 1;
   background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
-}
-
-.bg-indigo-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
 }
 
 .bg-pink-200 {
@@ -919,6 +919,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .max-h-80 {
   max-height: 20rem;
 }
@@ -1077,7 +1081,9 @@ video {
 }
 
 .transition {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
