@@ -22,7 +22,7 @@ const skills = [
   },
   {
     name: "C++",
-    rating: "90",
+    rating: "75",
     image: "https://img.icons8.com/color/64/000000/c-plus-plus-logo.png",
     color: "bg-blue-500",
     backgroundColor: "bg-blue-200",
@@ -36,7 +36,7 @@ const skills = [
   },
   {
     name: "CSS",
-    rating: "80",
+    rating: "87",
     image: "https://img.icons8.com/color/64/000000/css3.png",
     color: "bg-blue-500",
     backgroundColor: "bg-blue-200",
@@ -50,8 +50,8 @@ const skills = [
     backgroundColor: "bg-indigo-200",
   },
   {
-    name: "React",
-    rating: "67",
+    name: "React & React Native",
+    rating: "85",
     image: "https://img.icons8.com/color/64/000000/react-native.png",
     color: "bg-blue-500",
     backgroundColor: "bg-blue-200",
@@ -77,4 +77,11 @@ const skills = [
     color: "bg-yellow-500",
     backgroundColor: "bg-yellow-200",
   },
+  {
+    name: "Management",
+    rating: "80",
+    image: "https://img.icons8.com/dusk/64/000000/test-partial-passed.png",
+    color: "bg-purple-500",
+    backgroundColor: "bg-purple-200"
+  }
 ];

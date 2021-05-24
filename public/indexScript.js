@@ -1,4 +1,4 @@
-const rolls = ["Tushar", "a Developer", "a Gamer", "an Artist"];
+const rolls = ["Tushar", "a Developer", "a Gamer", "an Artist", "a Student","a Teacher"];
 const allSkills = document.querySelectorAll(".skill");
 let counter;
 var skillSet = 0;
@@ -11,7 +11,7 @@ var time = 150;
 function typeWords(words) {
   word = rolls[current];
   if (currentLetter >= word.length) {
-    setTimeout(removeWords, 2000);
+    setTimeout(removeWords, 1700);
     current = current >= rolls.length - 1 ? 0 : current + 1;
   } else {
     letter = document.createElement("span");
@@ -58,7 +58,7 @@ function showSkills() {
 
 
   }
-  setTimeout(hideSkills, 4000);
+  setTimeout(hideSkills, 3500);
 }
 function hideSkills() {
 
