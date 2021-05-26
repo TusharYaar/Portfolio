@@ -19,7 +19,9 @@ module.exports = {
       }
     },
   fontFamily: {
-    'karla': ['karla', 'sans-serif']}},
+    'Spectral': ['Spectral', 'serif'],
+    'karla': ['karla', 'sans-serif'],
+  }},
   variants: {
     extend: {},
   },

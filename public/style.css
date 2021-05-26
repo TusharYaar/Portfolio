@@ -633,14 +633,14 @@ video {
   background-color: rgba(254, 215, 170, var(--tw-bg-opacity));
 }
 
-.bg-orange-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(251, 146, 60, var(--tw-bg-opacity));
-}
-
 .bg-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 115, 22, var(--tw-bg-opacity));
+}
+
+.bg-rose-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(225, 29, 72, var(--tw-bg-opacity));
 }
 
 .hover\:bg-blue-700:hover {
@@ -829,6 +829,10 @@ video {
 
 .order-2 {
   order: 2;
+}
+
+.font-Spectral {
+  font-family: Spectral, serif;
 }
 
 .font-karla {
@@ -1211,25 +1215,6 @@ video {
 .animate-pulse {
   -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-/* karla-regular - latin */
-
-@font-face {
-  font-family: 'Karla';
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  src: url('./fonts/karla-v15-latin-regular.eot'); /* IE9 Compat Modes */
-
-  src: local(''),
-         url('./fonts/karla-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/karla-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./fonts/karla-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('./fonts/karla-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/karla-v15-latin-regular.svg#Karla') format('svg'); /* Legacy iOS */
 }
 
 .bg-orange-500 {
