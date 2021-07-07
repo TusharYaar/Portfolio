@@ -100,12 +100,10 @@ hideSkills();
 
 document.querySelectorAll(".showProjectDetails").forEach(function(project) {
   project.addEventListener("click", function(){
-    console.log(project.nextElementSibling);
     project.nextElementSibling.classList.toggle("h-0");
     if(project.nextElementSibling.classList.contains("h-0")){
       project.textContent = "Show Details";
     }
     else project.textContent = "Hide Details";
   });
-  console.log(project.nextElementSibling)
 })
